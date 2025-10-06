@@ -1,0 +1,88 @@
+/* FileUploader.tsx */
+.fileUploaderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.uploadWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.previewBox {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.emptyPreview {
+    color: #999;
+    font-size: 12px;
+}
+
+.uploadContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.uploadRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.uploadInput {
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+    flex: 1;
+}
+
+.uploadButton {
+    background-color: #1a3ca8;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.uploadButton:hover {
+    background-color: #162f84;
+}
+
+.deleteButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 18px;
+}

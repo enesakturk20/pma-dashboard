@@ -1,0 +1,22 @@
+.saveButton {
+    margin-top: 16px;
+    align-self: center;
+    padding: 12px 28px;
+    background-color: #1D3587;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.saveButton:hover {
+    background-color: #162a6b;
+}
+
+.buttonContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

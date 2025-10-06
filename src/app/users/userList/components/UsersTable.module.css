@@ -1,0 +1,206 @@
+.container {
+    background: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(221, 28, 28, 0.1);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.leftActions,
+.rightActions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.selectBox {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  appearance: none; /* varsayılan oku gizler */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
+  padding-right: 30px; /* ikon çakışmasın */
+}
+
+.addButton {
+    background: #1D3587;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.exportButton {
+    border: 1px solid #1D3587;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: white;
+    color: #1D3587;
+    cursor: pointer;
+}
+
+.searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    color: black;
+    outline: none; /* varsayılan mavi çerçeveyi kaldırır */
+}
+
+
+.searchInput:focus {
+  border: 1px solid #1D3587;
+}
+
+.checkboxContainer {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.customCheck {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 1.5px solid #999;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.checkbox:checked+.customCheck {
+    background-color: #1D3587;
+    border-color: #1D3587;
+}
+
+.checkbox:checked+.customCheck::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #5E5873;
+}
+
+.table thead {
+    background-color: #F3F2F7;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.userCell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.userCell img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.email {
+    font-size: 12px;
+    color: gray;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.inactive {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.eye {
+    cursor: pointer;
+    font-size: 18px;
+    color: #565656;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.eye:hover {
+    color: #1D3587;
+}
+
+.pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+    gap: 6px;
+}
+
+.pageButton {
+    border: none;
+    color: #6E6B7B;
+    background: #eee;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.activePage {
+    background: #1D3587;
+    color: white;
+}

@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ededed;
     --foreground: #ededed;
   }
 }
@@ -22,6 +22,32 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    padding: 24px;
+    background-color: #fff;
+}
+
+.labelTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+    color: #5E5873;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4D4A48;
+    margin-bottom: 6px;
+    display: block;
 }
 
 * {

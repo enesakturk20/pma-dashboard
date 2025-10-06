@@ -1,0 +1,82 @@
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logoImage {
+    width: 120px;
+    height: auto;
+}
+
+.panelTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  gap: 10px;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.menuItem:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.subMenu {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.subMenuItem {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 6px;
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.subMenuItem:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.icon {
+  font-size: 18px;
+}

@@ -1,0 +1,44 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.serviceGroup {
+  margin-bottom: 24px;
+}
+
+.serviceGroupTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6e6b7b;
+  margin-bottom: 8px;
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 32px;
+  gap: 12px;
+}
+
+.serviceLabel {
+  color: #4D4A48;
+  font-size: 14px;
+}
